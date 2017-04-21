@@ -6,7 +6,7 @@ class TestSong < Minitest:: Test
 
   def test_can_create_song
     song = Songs.new("love me tender")
-   refute_nil(song)
+    refute_nil(song)
   end
 
 
