@@ -47,13 +47,23 @@ end
   def guest_is_charged(guest)
     if guest.cash > 50
       return guest.cash - 50
-      else return "Sorry you don't have enough cash to enter"
+    else return "Sorry you don't have enough cash to enter"
     end
- end
+  end
 
   def select_song(song)
     return song.name 
   end
 
+  def fave_song(guest)
+    return guest.fave_song
+  end
+
+def buy_a_beer(guest)
+  if guest.cash > 10
+    return guest.cash - 10
+  # else return "Sorry you don't have enough cash to get more drunk"
+  end
+end
 
 end
